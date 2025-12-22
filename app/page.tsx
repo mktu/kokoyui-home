@@ -1,7 +1,6 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
-import Introduction from "@/components/sections/Introduction";
 import About from "@/components/sections/About";
 import Services from "@/components/sections/Services";
 import Reasons from "@/components/sections/Reasons";
@@ -14,7 +13,6 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <Introduction />
         <About />
         <Services />
         <Reasons />
