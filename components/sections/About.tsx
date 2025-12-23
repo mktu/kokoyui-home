@@ -4,24 +4,25 @@ import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <section id="about" className="py-16 md:py-24 relative overflow-hidden bg-white">
-      {/* 曲線の装飾 */}
-      <svg
-        className="absolute inset-0 w-full h-full pointer-events-none"
-        viewBox="0 0 1200 500"
-        fill="none"
-        preserveAspectRatio="xMidYMid slice"
-      >
-        <path
-          d="M-100 450 Q300 200 500 350 Q700 500 900 300 Q1100 100 1300 250"
-          stroke="#fc9c83"
-          strokeWidth="8"
+    <section id="about" className="relative overflow-hidden bg-bg-outer">
+      <div className="max-w-6xl mx-auto bg-bg-content py-16 md:py-24 px-4 relative">
+        {/* 曲線の装飾 */}
+        <svg
+          className="absolute inset-0 w-full h-full pointer-events-none"
+          viewBox="0 0 1200 500"
           fill="none"
-          opacity="0.5"
-        />
-      </svg>
+          preserveAspectRatio="xMidYMid slice"
+        >
+          <path
+            d="M-100 450 Q300 200 500 350 Q700 500 900 300 Q1100 100 1300 250"
+            stroke="#fc9c83"
+            strokeWidth="8"
+            fill="none"
+            opacity="0.5"
+          />
+        </svg>
 
-      <div className="max-w-[1100px] mx-auto px-4 relative z-10">
+        <div className="relative z-10">
         {/* タイトル部分 */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -59,6 +60,7 @@ export default function About() {
             〜寄り添う〜ことを大切に取り組んでいます。
           </p>
         </motion.div>
+        </div>
       </div>
     </section>
   );

@@ -5,9 +5,11 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden pt-24">
-      {/* ファーストビュー部分 */}
-      <div className="relative h-[700px] max-w-[1280px] mx-auto">
+    <section className="relative overflow-hidden pt-24 bg-bg-outer">
+      {/* コンテンツ領域 */}
+      <div className="max-w-6xl mx-auto bg-bg-content">
+        {/* ファーストビュー部分 */}
+        <div className="relative h-[700px]">
         {/* 装飾的な線 - 家をイメージした交差デザイン */}
         <div className="absolute inset-0 pointer-events-none overflow-visible">
           <svg
@@ -119,7 +121,7 @@ export default function Hero() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
           className="absolute rounded-lg overflow-hidden shadow-lg"
-          style={{ left: '2%', top: '30px', width: '180px', height: '140px' }}
+          style={{ left: '5%', top: '30px', width: '160px', height: '120px' }}
         >
           <Image src="/images/hero-1.webp" alt="" fill className="object-cover" />
         </motion.div>
@@ -130,7 +132,7 @@ export default function Hero() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.1 }}
           className="absolute rounded-lg overflow-hidden shadow-lg"
-          style={{ left: '0%', top: '220px', width: '200px', height: '150px' }}
+          style={{ left: '3%', top: '200px', width: '170px', height: '130px' }}
         >
           <Image src="/images/hero-4.webp" alt="" fill className="object-cover" />
         </motion.div>
@@ -141,7 +143,7 @@ export default function Hero() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           className="absolute rounded-lg overflow-hidden shadow-lg"
-          style={{ left: '3%', top: '420px', width: '220px', height: '160px' }}
+          style={{ left: '5%', top: '380px', width: '180px', height: '140px' }}
         >
           <Image src="/images/hero-3.webp" alt="" fill className="object-cover" />
         </motion.div>
@@ -174,7 +176,7 @@ export default function Hero() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.1 }}
           className="absolute rounded-lg overflow-hidden shadow-lg"
-          style={{ right: '2%', top: '30px', width: '180px', height: '140px' }}
+          style={{ right: '5%', top: '30px', width: '160px', height: '120px' }}
         >
           <Image src="/images/hero-6.webp" alt="" fill className="object-cover" />
         </motion.div>
@@ -185,7 +187,7 @@ export default function Hero() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           className="absolute rounded-lg overflow-hidden shadow-lg"
-          style={{ right: '0%', top: '220px', width: '200px', height: '150px' }}
+          style={{ right: '3%', top: '200px', width: '170px', height: '130px' }}
         >
           <Image src="/images/hero-5.webp" alt="" fill className="object-cover" />
         </motion.div>
@@ -196,7 +198,7 @@ export default function Hero() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.25 }}
           className="absolute rounded-lg overflow-hidden shadow-lg"
-          style={{ right: '3%', top: '420px', width: '220px', height: '160px' }}
+          style={{ right: '5%', top: '380px', width: '180px', height: '140px' }}
         >
           <Image src="/images/hero-4.webp" alt="" fill className="object-cover" />
         </motion.div>
@@ -269,10 +271,10 @@ export default function Hero() {
             />
           </motion.div>
         </div>
-      </div>
+        </div>
 
-      {/* 下部テキストセクション「そこに信頼できる場所」 */}
-      <div className="relative py-16">
+        {/* 下部テキストセクション「そこに信頼できる場所」 */}
+        <div className="relative py-16">
         {/* 黄色い円（左上寄り） */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
@@ -306,6 +308,7 @@ export default function Hero() {
             寄り添いでいつでも頼れる安心を届けます。
           </p>
         </motion.div>
+        </div>
       </div>
     </section>
   );

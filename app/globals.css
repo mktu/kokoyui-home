@@ -26,6 +26,10 @@
   --color-accent-pink-light: #FBD5DC;
   --color-accent-pink-dark: #E8899A;
 
+  /* 背景色 */
+  --color-bg-outer: #F0F0F0;
+  --color-bg-content: #FFFFFF;
+
   --color-gray-50: #FAFAFA;
   --color-gray-100: #F5F5F5;
   --color-gray-200: #EEEEEE;
