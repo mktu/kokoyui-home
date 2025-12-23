@@ -273,22 +273,22 @@ export default function Hero() {
 
       {/* 下部テキストセクション「そこに信頼できる場所」 */}
       <div className="relative py-16">
-        {/* 黄色い円（左側） */}
+        {/* 黄色い円（左上寄り） */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.6 }}
           className="absolute rounded-full bg-gradient-to-b from-[#f7dc6f] to-[#f5c842]"
-          style={{ left: '5%', top: '50%', transform: 'translateY(-50%)', width: '180px', height: '180px' }}
+          style={{ left: '8%', top: '10px', width: '100px', height: '100px' }}
         />
 
-        {/* オレンジ/ピンクの円（右下） */}
+        {/* オレンジ/ピンクの円（右下寄り） */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.7 }}
           className="absolute rounded-full bg-gradient-to-b from-[#f8b4a0] to-[#e8967e] opacity-80"
-          style={{ right: '15%', bottom: '-40px', width: '150px', height: '150px' }}
+          style={{ right: '8%', bottom: '10px', width: '80px', height: '80px' }}
         />
 
         <motion.div
