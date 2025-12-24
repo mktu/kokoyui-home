@@ -29,9 +29,9 @@ export default function Services() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mb-12 w-1/3"
+          className="mb-12 w-full md:w-1/3"
         >
-          <p className="text-sm text-gray-500 tracking-wider mb-1 text-right">
+          <p className="text-sm text-gray-500 tracking-wider mb-1">
             Our Services
           </p>
           <div className="w-full h-px bg-gray-400 mb-4" />

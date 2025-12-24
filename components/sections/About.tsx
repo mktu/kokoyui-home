@@ -29,9 +29,9 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mb-12 w-1/3"
+          className="mb-12 w-full md:w-1/3"
         >
-          <p className="text-sm text-[#c9a765] tracking-wider mb-1 text-right">
+          <p className="text-sm text-[#c9a765] tracking-wider mb-1">
             About Cocoro × Yui Home
           </p>
           <div className="w-full h-px bg-[#c9a765] mb-4" />
