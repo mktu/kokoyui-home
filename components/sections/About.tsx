@@ -46,17 +46,17 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-center"
+          className="text-left md:text-center"
         >
           <p className="text-gray-600 leading-loose tracking-wide">
             地域の人に愛されて15年、これまでプチリフォームから
-            <br />
+            <br className="hidden md:inline" />
             新築のお手伝いまで数多くの住居に関するお悩みに
-            <br />
+            <br className="hidden md:inline" />
             携わらせていただきました。困ったら心結HOMEと
-            <br />
+            <br className="hidden md:inline" />
             いっていただけるように常にお客様に
-            <br />
+            <br className="hidden md:inline" />
             〜寄り添う〜ことを大切に取り組んでいます。
           </p>
         </motion.div>
