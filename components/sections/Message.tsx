@@ -5,8 +5,41 @@ import Image from "next/image";
 
 export default function Message() {
   return (
-    <section className="py-20 md:py-28 bg-[#f4f4f4] relative overflow-hidden">
-      <div className="section-container relative z-10">
+    <section className="relative overflow-hidden bg-bg-outer">
+      <div className="max-w-6xl mx-auto bg-bg-content py-16 md:py-24 px-4 relative">
+        {/* 曲線の装飾 */}
+        <svg
+          className="absolute inset-0 w-full h-full pointer-events-none"
+          viewBox="0 0 1200 600"
+          fill="none"
+          preserveAspectRatio="xMidYMid slice"
+        >
+          <path
+            d="M1300 100 Q1000 300 800 150 Q600 0 400 200 Q200 400 -100 300"
+            stroke="#fc9c83"
+            strokeWidth="8"
+            fill="none"
+            opacity="0.4"
+          />
+        </svg>
+
+        {/* タイトル部分 */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mb-12 w-1/3"
+        >
+          <p className="text-sm text-gray-500 tracking-wider mb-1 text-right">
+            Message
+          </p>
+          <div className="w-full h-px bg-gray-400 mb-4" />
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-800 tracking-widest">
+            メッセージ
+          </h2>
+        </motion.div>
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* 代表者写真 */}
           <motion.div
@@ -34,15 +67,6 @@ export default function Message() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <div className="mb-8">
-              <span className="inline-block text-sm text-primary font-medium mb-2 tracking-wider">
-                Message
-              </span>
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
-                メッセージ
-              </h2>
-            </div>
-
             <div className="text-gray-600 leading-loose space-y-4">
               <p>お客様に支えられ今の心結HOME があります。</p>
               <p>皆様にとってのベストな形を提供できるよう</p>

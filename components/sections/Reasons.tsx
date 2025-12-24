@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import SectionTitle from "@/components/ui/SectionTitle";
 
 const reasons = [
   {
@@ -30,17 +29,28 @@ const reasons = [
 
 export default function Reasons() {
   return (
-    <section id="reasons" className="py-20 md:py-28 relative overflow-hidden">
-      {/* 装飾的な背景 */}
-      <div className="absolute left-0 top-1/4 w-64 h-64 bg-accent-pink/10 rounded-full blur-3xl" />
-      <div className="absolute right-0 bottom-1/4 w-80 h-80 bg-accent-blue/10 rounded-full blur-3xl" />
+    <section id="reasons" className="relative overflow-hidden bg-bg-outer">
+      <div className="max-w-6xl mx-auto bg-bg-content py-16 md:py-24 px-4 relative">
+        {/* 装飾的な背景 */}
+        <div className="absolute left-0 top-1/4 w-64 h-64 bg-accent-pink/10 rounded-full blur-3xl" />
+        <div className="absolute right-0 bottom-1/4 w-80 h-80 bg-accent-blue/10 rounded-full blur-3xl" />
 
-      <div className="section-container relative z-10">
-        <SectionTitle
-          label="Our Strengths"
-          title="私たちが選ばれる理由"
-          subtitle="心結HOMEが多くのお客様に選ばれる理由"
-        />
+        {/* タイトル部分 */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mb-12 w-1/3"
+        >
+          <p className="text-sm text-gray-500 tracking-wider mb-1 text-right">
+            Our Strengths
+          </p>
+          <div className="w-full h-px bg-gray-400 mb-4" />
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-800 tracking-widest">
+            私たちが選ばれる理由
+          </h2>
+        </motion.div>
 
         <div className="flex flex-col md:flex-row gap-6 mt-12 justify-center">
           {reasons.map((reason, index) => (
